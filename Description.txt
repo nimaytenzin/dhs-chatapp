@@ -1,0 +1,20 @@
+This is a chat app for Department of Human Settlement, MoWHS,
+This is written in vanilla javascript uses Node/express and socket.io for handing the backend.
+The frontend static files are served to the server.
+
+Features:
+1) Enter division chat room
+2) Websocket to enable real time chat.
+
+Demo
+open vs code and run on the terminal: node server.js
+and open localhost:3000 on browser
+
+Notes:
+1) create an express app.
+2) pass it to the http.createServer() to create a server app.
+3) pass the server app to the socketio()
+
+4) to emit to one particular client connected: use socket.emit('payload name', 'payload');
+5) to emit to all except the client connected user: socket.broadcast.emit('payload name',' payload');
+6) to emit to all the clients: io.emit('payload name', 'payload') 
