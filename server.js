@@ -10,7 +10,7 @@ const botName = 'DHS chat bot'
 
 app.use(expres.static('public'));
 const server = http.createServer(app);
-const PORT =80;
+const PORT =3000;
 
 const io = socketio(server);
 
